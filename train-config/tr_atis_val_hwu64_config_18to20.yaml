@@ -1,0 +1,24 @@
+data_dir: ../../datasets/contrastive/processed
+train_dataset_name: atis
+dev_dataset_name: hwu64
+st_model_name: all-mpnet-base-v2
+batch_size: 4
+train_data_file_name: full_with_neg_samp18.csv
+dev_data_dir: ../../datasets/contrastive/processed/
+dev_data_file_name: val_contrastive_hwu64_neg_samp20.csv
+debug: False
+train_loss: contrastive_loss
+cp_dir: checkpoint
+evaluation_steps: 20
+steps_per_epoch: 200
+save_best_model: True
+epochs: 1
+warmup_steps: 100
+patience: 5
+
+
+# st_model_name: all-MiniLM-L12-v2
+# st_model_name: quora-distilbert-multilingual
+# st_model_name: paraphrase-multilingual-mpnet-base-v2
+# st_model_name: all-distilroberta-v1
+# st_model_name: multi-qa-distilbert-cos-v1

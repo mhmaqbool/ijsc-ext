@@ -1,0 +1,13 @@
+data_dir: ../../../../datasets/contrastive/processed/hwu64
+dataset_name: hwu64
+similarity_metric: cos_sim
+debug: False
+test_file_name: test_no_neg_samp_hwu64.csv
+labels_map: '../../../../datasets/contrastive/processed/hwu64/label_to_id_map.pickle'
+st_model_name: ../../../train/tr_atis_val_hwu64_config_18to20/checkpoint/
+# st_model_name: 'all-MiniLM-L12-v2'
+# st_model_name: quora-distilbert-multilingual
+# st_model_name: all-mpnet-base-v2
+# st_model_name: paraphrase-multilingual-mpnet-base-v2
+# st_model_name: all-distilroberta-v1
+# st_model_name: multi-qa-distilbert-cos-v1
