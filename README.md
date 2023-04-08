@@ -9,5 +9,5 @@
 1. Fewshot configuration files have been uploaded. Please stick to configs with 2 negative examples for both 1shot and 2shot for all the datasets.
 2. Same commands work for fewshot. Configuration files are required to be changed in the commands relative to hydra.run.dir of your choosing.
 3. Few shot data path should be changed in the respective configuration file relative to hydra.run.dir.
-4. Models fine-tuned earlier are required to be loaded for fewshot training. **Their paths are also required to be be changed in the fewshot config files**. Refer to the respective few-shot configuration files. 
+4. Models fine-tuned earlier are required to be loaded for fewshot training. **Their paths are also required to be be changed in the fewshot config files**. Refer to the respective few-shot configuration files. Paths to these checkpoints are supoosed to be setup relative to hydra.run.dir.
  
