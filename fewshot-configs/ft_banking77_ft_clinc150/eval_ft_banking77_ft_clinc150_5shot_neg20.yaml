@@ -1,0 +1,13 @@
+data_dir: ../../../../../../datasets/contrastive/fewshot/5-shot/clinc150
+dataset_name: clinc150
+similarity_metric: cos_sim
+debug: False
+test_file_name: test_no_neg_samp_clinc150.csv
+labels_map: '../../../../../../datasets/contrastive/processed/clinc150/label_to_id_map.pickle'
+st_model_name: ../../../../train-few-shot/5-shot/clinc150/ft_banking77_ft_clinc150_5shot_neg20/checkpoint/
+# st_model_name: 'all-MiniLM-L12-v2'
+# st_model_name: quora-distilbert-multilingual
+# st_model_name: all-mpnet-base-v2
+# st_model_name: paraphrase-multilingual-mpnet-base-v2
+# st_model_name: all-distilroberta-v1
+# st_model_name: multi-qa-distilbert-cos-v1

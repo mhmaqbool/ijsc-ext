@@ -1,0 +1,13 @@
+data_dir: ../../../../../../datasets/contrastive/fewshot/3-shot_neg2/banking77
+dataset_name: banking77
+similarity_metric: cos_sim
+debug: False
+test_file_name: test_no_neg_samp_banking77.csv
+labels_map: '../../../../../../datasets/contrastive/processed/banking77/label_to_id_map.pickle'
+st_model_name: ../../../../train-few-shot/3-shot_neg2/banking77/ft_clinc150_ft_banking77_3shot_neg2/checkpoint/
+# st_model_name: 'all-MiniLM-L12-v2'
+# st_model_name: quora-distilbert-multilingual
+# st_model_name: all-mpnet-base-v2
+# st_model_name: paraphrase-multilingual-mpnet-base-v2
+# st_model_name: all-distilroberta-v1
+# st_model_name: multi-qa-distilbert-cos-v1

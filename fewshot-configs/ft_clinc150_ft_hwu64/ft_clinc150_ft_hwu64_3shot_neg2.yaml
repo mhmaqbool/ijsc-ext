@@ -1,0 +1,25 @@
+data_dir: ../../../../../../datasets/contrastive/fewshot/3-shot_neg2/
+train_dataset_name: hwu64
+dev_dataset_name: hwu64
+st_model_name: all-mpnet-base-v2
+batch_size: 4
+train_data_file_name: tr_hwu64_3_shot_neg2.csv
+dev_data_dir: ../../../../../../datasets/contrastive/fewshot/3-shot_neg2/
+dev_data_file_name: val_hwu64_for_3_shot_neg2.csv
+model_load_dir: ../../../../train/tr_clinc150_val_huw64_config_20to20/checkpoint
+debug: False
+train_loss: contrastive_loss
+cp_dir: checkpoint
+evaluation_steps: 200
+steps_per_epoch: 2000
+save_best_model: True
+epochs: 1
+warmup_steps: 100
+patience: 5
+
+
+# st_model_name: all-MiniLM-L12-v2
+# st_model_name: quora-distilbert-multilingual
+# st_model_name: paraphrase-multilingual-mpnet-base-v2
+# st_model_name: all-distilroberta-v1
+# st_model_name: multi-qa-distilbert-cos-v1

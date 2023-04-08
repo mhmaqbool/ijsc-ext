@@ -1,0 +1,25 @@
+data_dir: ../../../../../../datasets/contrastive/fewshot/3-shot_neg1/
+train_dataset_name: clinc150
+dev_dataset_name: clinc150
+st_model_name: all-mpnet-base-v2
+batch_size: 4
+train_data_file_name: tr_clinc150_3_shot_neg1.csv
+dev_data_dir: ../../../../../../datasets/contrastive/fewshot/3-shot_neg1/
+dev_data_file_name: val_clinc150_for_3_shot_neg1.csv
+model_load_dir: ../../../../train/tr_banking77_val_clinc150_config_20to20/checkpoint
+debug: False
+train_loss: contrastive_loss
+cp_dir: checkpoint-epoch-steps1000
+evaluation_steps: 20
+steps_per_epoch: 1000
+save_best_model: True
+epochs: 1
+warmup_steps: 100
+patience: 5
+
+
+# st_model_name: all-MiniLM-L12-v2
+# st_model_name: quora-distilbert-multilingual
+# st_model_name: paraphrase-multilingual-mpnet-base-v2
+# st_model_name: all-distilroberta-v1
+# st_model_name: multi-qa-distilbert-cos-v1
